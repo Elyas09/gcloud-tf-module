@@ -1,4 +1,5 @@
 module "example" {
+  source = "../"
   default = {
     name                         = "company.qa.com"
     description                  = "Example DNS zone"
