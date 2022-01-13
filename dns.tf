@@ -16,5 +16,5 @@ resource "google_dns_record_set" "instance1" {
 
   managed_zone = google_dns_managed_zone.example-zone.name
 
-  rrdatas = var.dns_config["rrdataas"]
+  rrdatas = [var.dns_config["rrdatas"]]
 }
